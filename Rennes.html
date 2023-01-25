@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Météo Rennes</title>
+    <link rel="stylesheet" type="text/css" href="./style/stylerennes.css">
+    <script src="./script/fetchrennes.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Météo Rennes</h1>
+    </header>
+
+    <nav>
+      <li><a href="./Accueil.html" title="Météo Lannion">Lannion</a></li>
+      <li><a href="./Autre.html" title="Autre ville">Autre ville</a></li>
+    </nav>
+
+    <main>
+      
+      <aside>
+        <h2>Par heure</h2>
+        <h3 id="jour"></h3>
+        <table class="zui-table" align="center">
+          <thead>
+            <tr>
+              <th>Heure</th>
+              <th>Température</th>
+              <th>Humidité</th>
+              <th>Vent</th>
+            </tr>
+          </thead>
+            <tbody id="ajd">
+            </tbody>
+        </table>
+      </aside>
+
+      <article>
+        <h2>Maintenant</h2>
+        <h3 id="horaire"></h3>
+        <p>...................................................................</p>
+        <h4>Temps</h4>
+        <p id ="temps"></p>
+        <p>...................................................................</p>
+        <h4>Température</h4>
+        <p id="temperature"></p>
+        <p>...................................................................</p>
+        <h4>Vent</h4>
+        <p id="vitesse"></p>
+        <p id="direction"></p>
+      </article>
+
+      <aside>
+        <h2>Par heure</h2>
+        <h3 id="lendemain"></h3>
+        <table class="zui-table" align="center">
+          <thead>
+            <tr>
+              <th>Heure</th>
+              <th>Température</th>
+              <th>Humidité</th>
+              <th>Vent</th>
+            </tr>
+          </thead>
+            <tbody id="demain">
+            </tbody>
+        </table>
+      </aside>
+
+    </main>
+
+    <footer>
+      <p>©Copyright Camille Boutholeau</p>
+    </footer>
+
+  </body>
+</html>
